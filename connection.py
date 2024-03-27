@@ -2,11 +2,16 @@
     Python program that helps you connect to a specified mongoDB on a remote server.
         
     INPUT:
-        - Database name (Default value: CHP)                 | Input through
-        - Collection name (Default value: characterization)  | Code parameters
-        - Timestep (input through STDIN)
+        - 1 or 0 based on the functionality needed
+        - Database name 
+        - Collection name 
+        - Timestep (if querrying / input through STDIN)
+        - Path of the CSV (if importing)
+        - Number of rows to import (if importing)
     OUTPUT:
-        - All objects that have the timestep inputted
+        - All objects that have the timestep inputted (if querrying)
+        - The number of rows imported (if importing)
+        
     
     NB:
         - You need to be connected to the Uni network for the SSH connection to work (Or use eduVPN)
@@ -15,7 +20,7 @@
           then the conversion of the input into float failed. Please check the timestep and try again.
         - If the program times out at any point, please try again.
         
-[Malek Miled] 19.03.2024
+[Malek Miled] 27.03.2024
 """
 from importCSV import importToMongoDB
 from querry import querryFromMongoDB
