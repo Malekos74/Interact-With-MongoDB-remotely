@@ -87,4 +87,7 @@ def querryFromMongoDB(client = None):
     processResult(result)
     
     return result
+
+if __name__ == '__main__':
+    querryFromMongoDB()
     
