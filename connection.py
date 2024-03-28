@@ -28,9 +28,9 @@ from pymongo import MongoClient
 from sshtunnel import SSHTunnelForwarder
 
 # SSH tunnel parameters (Can be changed accordingly)
-SSH_HOST = 'YOUR HOST'
-SSH_USER = 'YOUR USERNAME'
-SSH_PASSWORD = 'YOUR PASSWORD'
+SSH_HOST = '10.152.14.63'
+SSH_USER = 'malek.miled'
+SSH_PASSWORD = 'asdfghjkl'
 SSH_PORT =  22  # Default SSH port
 
 # MongoDB parameters (Can be changed accordingly)
