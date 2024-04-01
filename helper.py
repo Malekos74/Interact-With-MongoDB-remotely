@@ -1,3 +1,4 @@
+import csv
 from pymongo import MongoClient
 
 # Summary of a CSV
