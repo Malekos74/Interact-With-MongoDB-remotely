@@ -66,7 +66,7 @@ def queryFromMongoDB(client = None):
     result = queryOne(db, collection)
     
     # Ask the user for the field and value they want to query
-    field = input("Enter the field you want to query: ")
+    field = input("Enter the field you want to query based on: ")
     value = input(f"Enter the value for the field '{field}': ")
     
     # Check if the value is numerical (if it is, it will get converted and used since the value saved in the db would also be numerical)
